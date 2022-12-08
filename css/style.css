@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* outline: 2px solid red; */
+}
+.encabezado{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: 100px;
+}
+
+#img{
+    margin-top: 10px;
+}
+
+#active{
+    color: #C5A059;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    line-height: 100px;
+}
+
+nav ul a{
+    font-weight: bold;
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.section1{
+    background-image: url(../assets/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.section1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    color: white;
+}
+
+.banner h1{
+    font-size: 70px;
+}
+
+/*----- BUTTON -----*/
+button{
+    margin-top: 30px;
+    padding: 20px 40px;
+    background: none;
+    border: 4px solid #C5A059;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #C5A059;
+    color: white;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+/* FIN BUTTON */
+
+/* HISTORIA */
+
+main{
+    background-color: #252525;
+}
+
+section{
+    height: 645px;
+    padding: 50px 60px;
+}
+
+.HContainer{
+    display: flex;
+}
+
+.historia img{
+    width: 540px;
+}
+
+.Htext{
+    margin-left: 60px;
+}
+
+.Htext p{
+    font-size: 16px;
+    color: white;
+    padding: 40px 0;
+}
+
+.Htext h2{
+    font-size: 40px;
+    color: white;
+}
+
+.locales{
+    height: 500px;
+}
+
+/* FOOTER TOP */
+
+.footer-top{
+    height: 400px;
+}
+.Fcontiner{
+    text-align: center;
+    display: flex;
+    gap: 20px   ;
+}
+.caja{
+    background-color: #303030;
+    padding: 30px 30px;
+
+}
+.caja a{
+    text-decoration: none;
+}
+.caja p{
+    color: white;
+    padding: 60px 0;
+}
+.caja h2{
+    color: white;
+}
+footer{
+    align-items: center;
+    background-color: #191919;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+footer p{
+    color: white;
+}
+footer i{
+    color: #C5A059;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+/* QUERY */
+
+#pagina1{
+    background-image: url(../assets/Su.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina2{
+    background-image: url(../assets/local_5_Miraflores_aurora-404x267.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina3{
+    background-image: url(../assets/local_3_miraflores_porta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina4{
+    background-image: url(../assets/local_1_La_Molina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina5{
+    background-image: url(../assets/local_2_lince-404x267.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina6{
+    background-image: url(../assets/local_1_jesus_maria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina7{
+    background-image: url(../assets/sanisidro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#pagina1::before, #pagina2::before, #pagina3::before, #pagina4::before, #pagina5::before, #pagina6::before, #pagina7::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.b-wrap .b-counter{
+    background-color: #C5A059;
+    margin-left: 45%;
+    margin-right: 45%;
+    color: #fff;
+}
+
+#gotopage{
+    text-align: center;
+}
+
+#in_go{
+    width: 40px;
+    margin-right: 10px;
+}
+
+#portada, #contra{
+    color: white;
+    text-align: center;
+    background-color: #303030;
+    padding: 150px 40px;
+    height: 400px;
+}
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px;
+    height: 400px;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid darkgray;
+}
+
+.pagina p{
+    color: white;
+    z-index: 9;
+}
+
+.pagina h2{
+    color: white;
+    z-index: 10;
+}
+
+/* FiN QUERY */
+
+/* SERVICIOS */
+.sersection1{
+    background-image: url(../assets/serbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.sersection1::before{
+    content: "";
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.serbanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    position: relative;
+    color: white;
+}
+
+.serbanner h1{
+    font-size: 70px;
+}
+
+.sersection2{
+    padding-top: 80px;
+    width: 100%;
+    height: 1150px;
+}
+
+.sercontainer{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.sercaja{
+    flex: auto;
+    height: 500px;
+    background-color: #303030;
+}
+
+.sercaja img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#text{
+    text-align: center;
+    padding: 40px;
+}
+
+#text h2,p{
+    color: white;
+}
+
+#text p{
+    margin-top: 10px;
+}
+
+/* QUIENES SOMOS */
+
+.conCenter{
+    background-image: url(../assets/image\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.conCenter::before{
+    content: "";
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    position: relative;
+    color: white;
+}
+
+.content h2{
+    font-size: 70px;
+}
+
+.noscontainer{
+    background-color: #303030;
+}
+
+.nossection2{
+    padding-top: 80px;
+    height: 1130px;
+}
+
+.conTop, .conButton{
+    padding: 60px;
+}
+
+.conButton h2{
+    color: white;
+    margin-top: 20px;
+}
+
+/* CONTACTANOS */
+
+.contacsection2{
+    height: 785px;
+    width: 100%;
+}
+.contaccontainer{
+    width: 100%;
+    padding: 50px;
+    background-color: #303030;
+}
+.contacTitle {
+    width: 100%;
+}
+.contacTitle h1 {
+    color: white;
+    font-size: 48px;
+}
+#buttonContac {
+    border: #797979 5px solid;
+}
+#buttonContac:hover {
+    border: #797979 5px solid;
+    background-color: #797979;
+}
+.contacImg {
+    background-image: url(../assets/imgHisotira.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+}
+.contacContenido {
+    display: flex;
+    justify-content: space-between;
+}
+#inputText, #inputEmail, #textArea {
+    border: #797979 solid 5px;
+    background-color: #303030;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.form-check-label {
+    color: white;
+}
+
+/* holi */
+
+@media (max-width:878px){
+    html{font-size: 12px;}
+    .containerTop-imagen{display: none;}
+    
+    .grupo-1{display: inline-block;}
+
+    .contarinerTop p{font-size: 18px;}
+
+    .contarinerTop{padding: 0px 20px;}
+    
+    
+    .box{text-align: center;}
+    
+    .box-enlaces{padding: 30px 0px;text-align: center;}
+    
+    .box-descripcion{text-align: center;}
+    
+    hr{display: block;}
+    
+    .espaciado{display: none;}
+    
+    samp{display: none;} 
+
+    [class*="col-s"]{padding: 1rem;}
+    .col-s-1  { width: 8.33%;  }
+    .col-s-2  { width: 16.66%; }
+    .col-s-3  { width: 25%;    }
+    .col-s-4  { width: 33.33%; }
+    .col-s-5  { width: 41.66%; }
+    .col-s-6  { width: 50%;    }
+    .col-s-7  { width: 58.33%; }
+    .col-s-8  { width: 66.66%; }
+    .col-s-9  { width: 75%;    }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%;   }
+    
+}
+/* vista de tablet */
+@media (min-width:870px){
+    footer{font-size: 14px;}
+    .titulo-quienes img{width: 280px;}
+    .box-enlaces{text-align: center;}
+    .box-descripcion h4{text-align: center;}
+    samp{display: none;} 
+    [class*="col-m"]{padding: 1rem;}
+    .col-m-1  { width: 8.33%;  }
+    .col-m-2  { width: 16.66%; }
+    .col-m-3  { width: 25%;    }
+    .col-m-4  { width: 33.33%; }
+    .col-m-5  { width: 41.66%; }
+    .col-m-6  { width: 50%;    }
+    .col-m-7  { width: 58.33%; }
+    .col-m-8  { width: 66.66%; }
+    .col-m-9  { width: 75%;    }
+    .col-m-10 { width: 83.33%; }
+    .col-m-11 { width: 91.66%; }
+    .col-m-12 { width: 100%;   }
+}
+
+/* vista de escritorio */
+@media (min-width:1090px){
+    footer{font-size: 15px;}
+    .titulo-quienes img{width: 300px;}
+    samp{display: contents;} 
+    [class*="col-"]
+    .col-1  { width: 8.33%;  }
+    .col-2  { width: 16.66%; }
+    .col-3  { width: 25%;    }
+    .col-4  { width: 33.33%; }
+    .col-5  { width: 41.66%; }
+    .col-6  { width: 50%;    }
+    .col-7  { width: 58.33%; }
+    .col-8  { width: 66.66%; }
+    .col-9  { width: 75%;    }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%;   }
+}
