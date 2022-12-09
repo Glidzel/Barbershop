@@ -14,9 +14,16 @@
 </head>
 
 <body>
-<div class="container-form sign-up">
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Barbershop</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <a href="./login.php"><button class="sign-up-btn">Iniciar Sesion</button></a>
+            </div>
+        </div>
         <form class="formulario">
-            <h2 class="create-account">Iniciar Sesion</h2>
+            <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
                     <i class='bx bxl-instagram'></i>
@@ -28,18 +35,14 @@
                     <i class='bx bxl-facebook-circle' ></i>
                 </div>
             </div>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Iniciar Sesion">
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="name" id="username" name="username" placeholder="Nombre de usuario">
+            <input type="name" id="fullname" name="fullname" placeholder="Nombre Completo">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña">
+            <input type="button" class="btn btn-success" value="Registrarse">
         </form>
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                <a href="./registro.php"><button class="sign-in-btn" >Registrarse</button></a>
-            </div>
-        </div>
     </div>
     <script src="./js/script.js"></script>
 </body>
