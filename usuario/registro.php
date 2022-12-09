@@ -1,5 +1,5 @@
 <?php 
- require 'database.php';
+ require './php/conexion.php';
 
  $message = '';
 
@@ -47,7 +47,7 @@
                 <a href="./login.php"><button class="sign-up-btn">Iniciar Sesion</button></a>
             </div>
         </div>
-        <form class="formulario" role="form" id="registro" name="registro" action="./php/registro.php" method="post">
+        <form class="formulario" role="form" id="registro" name="registro" action="registro.php" method="post">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -61,9 +61,7 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <div>
             <input type="name" id="username" name="username" placeholder="Nombre de usuario">
-            </div>
             <input type="name" id="fullname" name="fullname" placeholder="Nombre Completo">
             <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Contraseña">
@@ -72,6 +70,7 @@
             
         </form>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

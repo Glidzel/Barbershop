@@ -2,7 +2,7 @@
 $host="localhost";
 $user="root";
 $password="";
-$db="bpmsdb";
+$db="barbershop";
 $con = new mysqli($host,$user,$password,$db);
 
 ?>
