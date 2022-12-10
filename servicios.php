@@ -31,7 +31,7 @@
     </div>
     <main>
         <section class="sersection2">
-            <div class="sercontainer">
+            <div class="sercontainer d-flex justify-content-center">
                 <div class="sercaja col-5">
                     <div>
                         <img src="./assets/ser01.png" alt="...">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="sercontainer">
+                <div class="sercontainer d-flex justify-content-center">
                     <div class="sercaja col-5">
                         <div>
                             <img src="./assets/ser03.png" alt="...">

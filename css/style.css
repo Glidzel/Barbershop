@@ -138,35 +138,36 @@ section{
     color: white;
 }
 
-.locales{
+.carousel{
+    height: 500px;
+}
+.carouselIndex{
+    height: 550px;
+}
+.carousel-item{
+    height: 500px;
+}
+.carousel-item img{
+    opacity: 0.5;
+}
+.carousel-inner{
     height: 500px;
 }
 
 /* FOOTER TOP */
-
-.footer-top{
-    height: 400px;
-}
-.Fcontiner{
-    text-align: center;
-    display: flex;
-    gap: 20px   ;
-}
-.caja{
+.card-body{
     background-color: #303030;
-    padding: 30px 30px;
+}
 
+.footerTop{
+    padding: 50px 0;
 }
-.caja a{
-    text-decoration: none;
-}
-.caja p{
-    color: white;
-    padding: 60px 0;
-}
-.caja h2{
+.card-title{
     color: white;
 }
+
+
+/* END FOOTER TOP */
 footer{
     align-items: center;
     background-color: #191919;
@@ -342,7 +343,7 @@ footer i{
 .sersection2{
     padding-top: 80px;
     width: 100%;
-    height: 1150px;
+    height: 1225px;
 }
 
 .sercontainer{
@@ -353,7 +354,7 @@ footer i{
 
 .sercaja{
     flex: auto;
-    height: 500px;
+    height: 550px;
     background-color: #303030;
 }
 
@@ -431,7 +432,7 @@ footer i{
 /* CONTACTANOS */
 
 .contacsection2{
-    height: 785px;
+    height: 850px;
     width: 100%;
 }
 .contaccontainer{

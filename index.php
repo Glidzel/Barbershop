@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
     <script src="https://kit.fontawesome.com/97bed5bbe0.js" crossorigin="anonymous"></script>
+    <script src="js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/jquery.booklet.latest.css" type="text/css">
 </head>
@@ -49,48 +50,55 @@
                 </div>
             </div>
         </section>
-        <section class="locales" id="locales">
-            <div id="wrapper">
-                <div id="mi_libro">
-                    <div id="portada">
-                        <h2>Nuestros Locales</h2>
-                        <p>Contamos con varios locales, para que puedas disfrutar de nuestros servicios en cualquier lugar.</p>
-                    </div>
-                    <div id="pagina1" class="pagina">
-                        <h2>SURCO</h2>
+        <section class="carouselIndex">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/Su.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SURCO</h5>
                         <p>Av. Primavera 1676, Surco, Lima.</p>
                     </div>
-                    <div id="pagina2" class="pagina">
-                        <h2>MIRAFLORES - AURORA</h2>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/local_5_Miraflores_aurora-404x267.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MIRAFLORES - AURORA</h5>
                         <p>Av. Alfredo Benavides 2197, Miraflores, Lima.</p>
                     </div>
-                    <div id="pagina3" class="pagina">
-                        <h2>MIRAFLORES PORTA</h2>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/local_3_miraflores_porta.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MIRAFLORES PORTA</h5>
                         <p>Calle Porta 194, Miraflores, Lima.</p>
                     </div>
-                    <div id="pagina4" class="pagina">
-                        <h2>LA MOLINA</h2>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/local_1_La_Molina.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LA MOLINA</h5>
                         <p>Javier Prado Este 5295, La Molina, Lima.</p>
                     </div>
-                    <div id="pagina5" class="pagina">
-                        <h2>LINCE</h2>
-                        <p>Av. Arenales 2211, Lince, Lima.</p>
                     </div>
-                    <div id="pagina6" class="pagina">
-                        <h2>JESÚS MARÍA</h2>
-                        <p>CC San Felipe, Tda. 67, Int. 79 Residencial San Felipe.</p>
-                    </div>
-                    <div id="pagina7" class="pagina">
-                        <h2>SAN ISIDRO</h2>
-                        <p>Av.Los conquistadores #133, San Isidro, Lima.</p>
-                    </div>
-                
                 </div>
-                <!-- <div id="gotopage">
-                    <input id="in_go"/> <button id="bt_go">Ir a la página</button>
-                </div> -->
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
         </section>
+
         <!-- FOOTER -->
         <?php include 'footer.php'; ?>
 </body>
@@ -99,4 +107,5 @@
 <script src="./js/jquery.booklet.latest.min.js" type="text/javascript"></script>
 <script src="./js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="./js/scrip.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
 </html>

@@ -15,4 +15,21 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '400px'
     });
+    sr.reveal('.banner', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px'
+    });
+    sr.reveal('.HContainer', {
+        duration: 4000,
+        origin: 'left',
+        distance: '400px'
+    });
+    sr.reveal('.carouselIndex', {
+        duration: 4000,
+        origin: 'rigth',
+        distance: '400px'
+    });
+    
+
     
