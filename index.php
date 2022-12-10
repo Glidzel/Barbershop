@@ -27,7 +27,7 @@
         <div class="banner">
             <h1 id="active">BRINDAMOS UN SERVICIO</h1>
             <h1>DE PRIMER NIVEL</h1>
-            <button onclick="location.href = 'contactanos.php';">CONTÁCTANOS</button>
+            <button onclick="location.href = 'registrarCita.php';">REGISTRAR CITA</button>
         </div>
     </div>
     <main>
