@@ -1,3 +1,26 @@
+<?php
+
+  session_start();
+
+  require 'database.php';
+
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: /php-login");
+    } else {
+      $message = 'Sorry, those credentials do not match';
+    }
+  }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +39,7 @@
 
 <body>
 <div class="container-form sign-up">
-        <form class="formulario">
+        <form class="formulario" action="login.php" method="POST">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <div class="border-icon">

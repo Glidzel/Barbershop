@@ -5,7 +5,7 @@
   $message = '';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO usuario (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -48,7 +48,7 @@
                 <a href="./login.php"><button class="sign-up-btn">Iniciar Sesion</button></a>
             </div>
         </div>
-        <form class="formulario" role="form" id="registro" name="registro" action="registro.php" method="post">
+        <form class="formulario" id="registro" name="registro" action="registro.php" method="POST">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -62,13 +62,12 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="name" id="username" name="username" placeholder="Nombre de usuario">
-            <input type="name" id="fullname" name="fullname" placeholder="Nombre Completo">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+            <input type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
             <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Contraseña">
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña">
-            <input type="button" class="btn btn-success" value="Registrarse">
-            
+            <input type="submit" value="Registrarse">            
         </form>
     </div>
 </body>
