@@ -5,8 +5,10 @@
   $message = '';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO usuario (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO usuario (fullname,username,email, password) VALUES (:fullname, :username, :email, :password)";
     $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':fullname', $_POST['fullname']);
+    $stmt->bindParam(':username', $_POST['username']);
     $stmt->bindParam(':email', $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $stmt->bindParam(':password', $password);
@@ -26,7 +28,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -62,11 +64,10 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
             <input type="text" id="fullname" name="fullname" placeholder="Nombre Completo">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
             <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Contraseña">
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña">
             <input type="submit" value="Registrarse">            
         </form>
     </div>
