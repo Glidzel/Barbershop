@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Barbershop</title>
     <script src="https://kit.fontawesome.com/97bed5bbe0.js" crossorigin="anonymous"></script>
+    <script src="js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/jquery.booklet.latest.css" type="text/css">
 </head>
@@ -26,7 +27,17 @@
         </header>
         <div class="serbanner">
             <h1>QUIENES SOMOS</h1>
-            <p>HOME:NOSOTROS</p>
+            <div class="d-flex">
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>&nbsp; &nbsp;
+                </div>
+                <div>
+                <p>HOME &nbsp; : &nbsp; NOSOTROS</p>
+                </div>&nbsp; &nbsp;
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>
+                </div>
+            </div>
         </div>
     </div>
     <main>
@@ -59,4 +70,5 @@
 <script src="./js/jquery.booklet.latest.min.js" type="text/javascript"></script>
 <script src="./js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="./js/scrip.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
 </html>

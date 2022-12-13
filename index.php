@@ -60,28 +60,28 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="./assets/Su.png" class="d-block w-100" alt="...">
+                    <img src="./assets/local01.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>SURCO</h5>
                         <p>Av. Primavera 1676, Surco, Lima.</p>
                     </div>
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/local_5_Miraflores_aurora-404x267.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/local02.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>MIRAFLORES - AURORA</h5>
                         <p>Av. Alfredo Benavides 2197, Miraflores, Lima.</p>
                     </div>
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/local_3_miraflores_porta.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/local03.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>MIRAFLORES PORTA</h5>
                         <p>Calle Porta 194, Miraflores, Lima.</p>
                     </div>
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/local_1_La_Molina.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/local04.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>LA MOLINA</h5>
                         <p>Javier Prado Este 5295, La Molina, Lima.</p>

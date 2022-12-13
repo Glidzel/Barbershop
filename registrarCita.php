@@ -29,22 +29,34 @@
         </header>
         <div class="serbanner">
             <h1>REGISTRAR UNA CITA</h1>
-            <p>HOME:REGISTRAR CITA</p>
+            <div class="d-flex">
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>&nbsp; &nbsp;
+                </div>
+                <div>
+                <p>HOME &nbsp; : &nbsp; REGISTRAR CITA</p>
+                </div>&nbsp; &nbsp;
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>
+                </div>
+            </div>
         </div>
     </div>
     <main>
         <div class="container" id="regcontainer">
-            <div class="row">
-                <div class="col-6">
-                    <img src="./assets/imgHisotira.png" class="img-fluid" alt="...">                </div>
-                <div class="col-6">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-6 col-11">
+                    <img src="./assets/imgHisotira.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-sm-6 col-11 Resform">
                     <h6 class="text-center text-white">RESERVACIONES</h6>
                     <p class="fs-2 text-center">Haga una cita</p>
                     <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
                         <option selected>SELECCIONA NUESTRO SERVICIOS</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Barba</option>
+                        <option value="2">Facial</option>
+                        <option value="3">Corte</option>
+                        <option value="4">Afeitado</option>
                     </select>
                     <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="floatingInput" placeholder="dd/mm/aaa">
