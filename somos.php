@@ -13,7 +13,7 @@
 <body>
     <div class="sersection1">
         <header class="encabezado">
-            <a id="img" href=""><img src="./assets/logotipo.png" alt="..."></a>
+        <a id="img" href="./index.php"><img style="width: 100px;" src="./assets/logo02.png" alt="..."></a>
             <div class="menu">
                 <nav>
                     <ul>
@@ -50,7 +50,7 @@
                     <div class="content">
                         <h2 id="active">DESCUBRE NUESTRA</h2>
                         <h2>FORMA DE TRABAJO</h2>
-                        <button>VER VIDEO</button>
+                        <button onclick="location.href = '';">VER VIDEO</button>
                     </div>
                 </div>
                 <div class="conButton">

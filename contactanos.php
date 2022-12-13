@@ -13,7 +13,7 @@
 <body>
     <div class="sersection1">
         <header class="encabezado">
-            <a id="img" href=""><img src="./assets/logotipo.png" alt="..."></a>
+        <a id="img" href="index.php"><img style="width: 100px;" src="./assets/logo02.png" alt="..."></a>
             <div class="menu">
                 <nav>
                     <ul>
