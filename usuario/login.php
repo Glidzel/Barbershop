@@ -2,6 +2,10 @@
 
   session_start();
 
+  if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+  }
+
   require 'database.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -14,7 +18,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      $message = 'yes, those credentials do not match';
+      header("Location:index.php");
     } else {
       $message = 'Sorry, those credentials do not match';
     }
@@ -59,7 +63,7 @@
             </div>
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
             <input name="email" type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
+            <input name="password" type="password" placeholder="Contraseña">
             <input type="submit" value="Iniciar Sesion">
         </form>
         <div class="welcome-back">

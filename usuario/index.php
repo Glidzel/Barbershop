@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  require 'usuario/database.php';
+  require 'database.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, fullname, username, email, password FROM usuario WHERE id = :id');
@@ -26,10 +26,17 @@
     <title>BarberShop</title>
     <script src="https://kit.fontawesome.com/97bed5bbe0.js" crossorigin="anonymous"></script>
     <script src="js/scrollreveal.js"></script>
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/jquery.booklet.latest.css" type="text/css">
 </head>
 <body>
+<?php if(!empty($user)): ?>
+      <br> Bienvenido. <?= $user['fullname']; ?>
+      <a href="logout.php">
+        Logout
+      </a>
+    <?php else: ?>
+    <?php endif; ?>
 <div class="section1">
         <header class="encabezado">
             <a id="img" href="index.php"><img src="./assets/logotipo.png" alt="..."></a>
@@ -40,16 +47,9 @@
                         <li><a href="./servicios.php">SERVICIOS</a></li>
                         <li><a href="./somos.php">NOSOTROS</a></li>
                         <li><a href="./contactanos.php">CONTÁCTANOS</a></li>
-                        <?php if(!empty($user)): ?>
-                            <a>Bienvenido. <?= $user['username']; ?></a>
-                            <a href="logout.php">
-                            Logout
-                            </a>
-                            <?php else: ?>
                         <li><a href="./usuario/login.php">INICIAR SESION</a></li>
-                        <?php endif; ?>
+
                     </ul>
-                    
                 </nav>
             </div>
         </header>
