@@ -14,7 +14,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      $message = 'yes';
+      $message = 'yes, those credentials do not match';
     } else {
       $message = 'Sorry, those credentials do not match';
     }
