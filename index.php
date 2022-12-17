@@ -42,9 +42,7 @@
                         <li><a href="./contactanos.php">CONTÁCTANOS</a></li>
                         <?php if(!empty($user)): ?>
                             <a>Bienvenido. <?= $user['username']; ?></a>
-                            <a href="logout.php">
-                            Logout
-                            </a>
+                            <a href="/usuario/logout.php">Logout</a>
                             <?php else: ?>
                         <li><a href="./usuario/login.php">INICIAR SESION</a></li>
                         <?php endif; ?>

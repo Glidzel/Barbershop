@@ -2,10 +2,6 @@
 
   session_start();
 
-  if (isset($_SESSION['user_id'])) {
-    header('Location: index.php');
-  }
-
   require 'database.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -18,7 +14,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location:index.php");
+      header("Location: /barbershop");
     } else {
       $message = 'Sorry, those credentials do not match';
     }
