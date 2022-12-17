@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Barbershop</title>
     <script src="https://kit.fontawesome.com/97bed5bbe0.js" crossorigin="anonymous"></script>
+    <script src="js/scrollreveal.js"></script>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/jquery.booklet.latest.css" type="text/css">
 </head>
 <body>
     <div class="sersection1">
         <header class="encabezado">
-            <a id="img" href=""><img src="./assets/logotipo.png" alt="..."></a>
+        <a id="img" href="./index.php"><img style="width: 100px;" src="./assets/logo02.png" alt="..."></a>
             <div class="menu">
                 <nav>
                     <ul>
@@ -26,12 +27,22 @@
         </header>
         <div class="serbanner">
             <h1>SERVICIOS</h1>
-            <p>HOME:SERVICIOS</p>
+            <div class="d-flex">
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>&nbsp; &nbsp;
+                </div>
+                <div>
+                <p>HOME &nbsp; : &nbsp; SERVICIOS</p>
+                </div>&nbsp; &nbsp;
+                <div>
+                <i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i>
+                </div>
+            </div>
         </div>
     </div>
     <main>
         <section class="sersection2">
-            <div class="sercontainer d-flex justify-content-center">
+            <div class="sercontainer ser01 d-flex justify-content-center">
                 <div class="sercaja col-5">
                     <div>
                         <img src="./assets/ser01.png" alt="...">
@@ -51,7 +62,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="sercontainer d-flex justify-content-center">
+                <div class="sercontainer ser02 d-flex justify-content-center">
                     <div class="sercaja col-5">
                         <div>
                             <img src="./assets/ser03.png" alt="...">
@@ -80,4 +91,5 @@
 <script src="./js/jquery.booklet.latest.min.js" type="text/javascript"></script>
 <script src="./js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="./js/scrip.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
 </html>

@@ -34,6 +34,9 @@ nav ul a{
     color: white;
     text-decoration: none;
 }
+nav ul a:hover{
+    color: #C5A059;
+}
 
 .section1{
     background-image: url(../assets/Banner.png);
@@ -161,6 +164,7 @@ section{
 
 .footerTop{
     padding: 50px 0;
+    width: 100%;
 }
 .card-title{
     color: white;
@@ -488,9 +492,25 @@ footer i{
 h6{
     font-size: 12px;
 }
-.form-select{
+.form-floating input{
+    background-color: #303030;
+    color: white;
+    border: none;
+}
+.form-floating input:focus{
+    background-color: #303030;
+    color: white;
+}
+.form-floating label{
+    color: white;
+}
+.col-sm-6 select{
+    background-color: #303030;
+    color: white;
+    border: none;
     padding: 17px 10px;
 }
+
 
 /* holi */
 
